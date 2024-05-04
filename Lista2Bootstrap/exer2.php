@@ -22,7 +22,10 @@ require_once "cabecalho.php";
     if ($_POST) {
         if (isset($_POST['valores'])) {
             $valores = $_POST['valores'];
-            menorPosicao($valores);
+            $mediaPos = array();
+            $mediaPos = menorPosicao($valores);
+            echo "O menor valor informado é o: " . $mediaPos[0];
+            echo "<br>A posição desse valor é: " . $mediaPos[1]; 
         }
     }
 
