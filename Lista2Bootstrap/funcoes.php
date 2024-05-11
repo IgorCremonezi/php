@@ -84,3 +84,29 @@
         $qtdePreco[1] = $preco;
         return $qtdePreco;
     }
+
+    function anoViveuVivera($anoNascimento)
+    {
+        define("ANO_ATUAL", 2024);
+        $idade = ANO_ATUAL - $anoNascimento;
+
+        return $idade;
+    }
+
+    function calcularImc($peso, $altura)
+    {
+        $imc = $peso / ($altura * $altura);
+
+        if ($imc < 18.50)
+            return "Abaixo do peso!";
+        else if (($imc >= 18.50) && ($imc < 25))
+            return "Peso ideal!";
+        else if (($imc >= 25) && ($imc < 30))
+            return "Acima do peso!";
+        else if (($imc >= 30) && ($imc < 35))
+            return "Obesidade grau I";
+        else if (($imc >= 35) && ($imc < 40))
+            return "Obesidade grau II";
+        else
+            return "Obesidade grau III";
+    }
