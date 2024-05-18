@@ -1,6 +1,6 @@
 <?php
 
-    require_once "../cabecalho.html";
+    require_once "../cabecalho.php";
 ?>
 
     <h3 class="mt-4">Gerenciamento de Produtos</h3>
