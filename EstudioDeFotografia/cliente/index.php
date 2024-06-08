@@ -25,8 +25,8 @@
                 <td><?= $l['telefone'] ?></td>
                 <td><?= $l['email'] ?></td>
                 <td>
-                    <a href="alterar_cliente.php" class="btn btn-warning">Alterar</a>
-                    <a href="excluir_cliente.php" class="btn btn-danger">Excluir</a>
+                    <a href="alterar_cliente.php?id=<?= $l['id'] ?>" class="btn btn-warning">Alterar</a>
+                    <a href="excluir_cliente.php?id=<?= $l['id'] ?>" class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
             <?php
